@@ -1,0 +1,65 @@
+:root {
+  --brand: #c2410c;
+  --brand-dark: #9a3412;
+}
+
+.text-brand {
+  color: var(--brand);
+}
+
+.btn-orange {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-active-border-color: var(--brand-dark);
+}
+
+.hero {
+  color: #fff;
+  background-color: #1f2937;
+}
+
+.hero-img {
+  height: 260px;
+  object-fit: contain;
+}
+
+.product-img {
+  height: 220px;
+  object-fit: contain;
+}
+
+.card {
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  position: sticky;
+  top: 80px;
+}
+
+.btn-check:checked + .btn-outline-dark {
+  color: #fff;
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--brand-dark);
+  background-color: #fff7ed;
+}
+
+@media (max-width: 991px) {
+  .filters {
+    position: static;
+  }
+}

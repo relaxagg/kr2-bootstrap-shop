@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samsung Galaxy S23+: цена и характеристики.">
+  <title>Galaxy S23+ — TechPoint</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tech<span class="text-brand">Point</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 flex-grow-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Galaxy S23+</li>
+      </ol>
+    </nav>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <img src="images/samsung-s23-plus.jpg" class="img-fluid" alt="Samsung Galaxy S23+">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h1>Samsung Galaxy S23+</h1>
+        <div class="mb-3">
+          <span class="badge text-bg-success">В наличии</span>
+        </div>
+        <p class="fs-2 fw-bold"><span id="price" data-price="57990">57 990 ₽</span></p>
+        <p>Как S23, только с экраном побольше и батареей на 4700 мА·ч. Телефон проверен, есть гарантия магазина.</p>
+
+        <p class="fw-semibold mb-2">Память</p>
+        <div class="btn-group mb-3" role="group" aria-label="Память">
+          <input type="radio" class="btn-check option" name="memory" id="mem256" value="256 ГБ" data-extra="0" checked>
+          <label class="btn btn-outline-dark" for="mem256">256 ГБ</label>
+          <input type="radio" class="btn-check option" name="memory" id="mem512" value="512 ГБ" data-extra="4000">
+          <label class="btn btn-outline-dark" for="mem512">512 ГБ</label>
+        </div>
+
+        <p class="fw-semibold mb-2">Цвет</p>
+        <div class="btn-group mb-3" role="group" aria-label="Цвет">
+          <input type="radio" class="btn-check option" name="color" id="black" value="чёрный" checked>
+          <label class="btn btn-outline-dark" for="black">Чёрный</label>
+          <input type="radio" class="btn-check option" name="color" id="white" value="белый">
+          <label class="btn btn-outline-dark" for="white">Белый</label>
+        </div>
+
+        <p class="text-secondary">Выбрано: <span id="selected">256 ГБ, чёрный</span></p>
+
+        <a class="btn btn-orange btn-lg me-2" id="orderLink" href="order.html?model=Samsung%20Galaxy%20S23%2B">Оформить заявку</a>
+        <a class="btn btn-outline-secondary btn-lg" href="catalog.html">В каталог</a>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab" aria-controls="specs" aria-selected="true">Характеристики</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="false">Доставка и гарантия</button>
+      </li>
+    </ul>
+    <div class="tab-content border border-top-0 rounded-bottom p-3">
+      <div class="tab-pane fade show active" id="specs" role="tabpanel" aria-labelledby="specs-tab">
+        <table class="table table-striped mb-0">
+          <tbody>
+            <tr><th scope="row">Экран</th><td>6,6 дюйма, 120 Гц</td></tr>
+            <tr><th scope="row">Процессор</th><td>Snapdragon 8 Gen 2</td></tr>
+            <tr><th scope="row">Память</th><td>8 ГБ / 256 или 512 ГБ</td></tr>
+            <tr><th scope="row">Камера</th><td>50 Мп</td></tr>
+            <tr><th scope="row">Аккумулятор</th><td>4700 мА·ч</td></tr>
+            <tr><th scope="row">Цвет</th><td>Чёрный, белый</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+        <p>Доставка курьером по городу или самовывоз. Оплата при получении.</p>
+        <p class="mb-0">Гарантия магазина 30 дней.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <p class="fw-bold mb-1">TechPoint</p>
+          <p class="mb-0 text-white-50">Смартфоны Samsung с проверкой и гарантией</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">8 (800) 555-35-35</p>
+          <p class="mb-0">abobaverygood@techpoint.example</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="mb-0 text-white-50">&copy; 2026 TechPoint. Учебный проект, цены для примера</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты магазина TechPoint.">
+  <title>Контакты — TechPoint</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tech<span class="text-brand">Point</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 flex-grow-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+      </ol>
+    </nav>
+
+    <h1 class="mb-4">Контакты</h1>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">Телефон: <a href="tel:+78005553535">8 (800) 555-35-35</a></li>
+          <li class="list-group-item">E-mail: <a href="mailto:abobaverygood@techpoint.example">abobaverygood@techpoint.example</a></li>
+          <li class="list-group-item">Адрес: г. Москва, ул. Зелибобинская 228</li>
+          <li class="list-group-item">Режим работы: каждый день с 10:00 до 20:00</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h5">Обратная связь</h2>
+            <p>Есть вопрос или хотите заказать телефон? Оставьте заявку.</p>
+            <a class="btn btn-orange" href="order.html">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <p class="fw-bold mb-1">TechPoint</p>
+          <p class="mb-0 text-white-50">Смартфоны Samsung с проверкой и гарантией</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">8 (800) 555-35-35</p>
+          <p class="mb-0">abobaverygood@techpoint.example</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="mb-0 text-white-50">&copy; 2026 TechPoint. Учебный проект, цены для примера</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

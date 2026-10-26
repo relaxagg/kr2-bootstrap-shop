@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог смартфонов Samsung Galaxy S23, S23+ и S23 Ultra.">
+  <title>Каталог — TechPoint</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tech<span class="text-brand">Point</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 flex-grow-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+      </ol>
+    </nav>
+
+    <h1 class="mb-4">Каталог</h1>
+
+    <div class="row g-4">
+      <aside class="col-lg-3">
+        <div class="card filters">
+          <div class="card-body">
+            <h2 class="h5">Фильтры</h2>
+            <form id="filters">
+              <p class="fw-semibold mb-2">Модель</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="model" value="s23" id="f-s23">
+                <label class="form-check-label" for="f-s23">Galaxy S23</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="model" value="s23plus" id="f-s23plus">
+                <label class="form-check-label" for="f-s23plus">Galaxy S23+</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="model" value="s23ultra" id="f-s23ultra">
+                <label class="form-check-label" for="f-s23ultra">Galaxy S23 Ultra</label>
+              </div>
+
+              <p class="fw-semibold mb-2">Цена</p>
+              <div class="input-group mb-2">
+                <span class="input-group-text">от</span>
+                <input class="form-control" type="number" name="price-from" min="0">
+                <span class="input-group-text">₽</span>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">до</span>
+                <input class="form-control" type="number" name="price-to" min="0">
+                <span class="input-group-text">₽</span>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button class="btn btn-orange" type="submit">Показать</button>
+                <button class="btn btn-outline-secondary" type="reset">Сбросить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+
+      <section class="col-lg-9">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
+          <div class="col" data-model="s23" data-price="49990">
+            <div class="card h-100">
+              <img src="images/samsung-s23.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2"><span class="badge text-bg-success">В наличии</span></div>
+                <h3 class="card-title h5">Samsung Galaxy S23</h3>
+                <p class="card-text text-secondary">8/256 ГБ, экран 6,1 дюйма</p>
+                <p class="fw-bold fs-5 mb-3">49 990 ₽</p>
+                <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-orange" href="product-s23.html">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-model="s23plus" data-price="57990">
+            <div class="card h-100">
+              <img src="images/samsung-s23-plus.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23+">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2"><span class="badge text-bg-success">В наличии</span></div>
+                <h3 class="card-title h5">Samsung Galaxy S23+</h3>
+                <p class="card-text text-secondary">8/256 ГБ, экран 6,6 дюйма</p>
+                <p class="fw-bold fs-5 mb-3">57 990 ₽</p>
+                <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-orange" href="product-s23-plus.html">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-model="s23ultra" data-price="64990">
+            <div class="card h-100">
+              <img src="images/samsung-s23-ultra.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23 Ultra">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2"><span class="badge text-bg-danger">Скидка 13%</span></div>
+                <h3 class="card-title h5">Samsung Galaxy S23 Ultra</h3>
+                <p class="card-text text-secondary">12/256 ГБ, экран 6,8 дюйма, стилус</p>
+                <p class="fw-bold fs-5 mb-3 text-danger">64 990 ₽ <s class="text-secondary fs-6 fw-normal">74 990 ₽</s></p>
+                <div class="mt-auto d-flex gap-2">
+                <a class="btn btn-orange" href="product.html">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-secondary d-none mt-4" id="emptyAlert">Ничего не найдено. Попробуйте изменить фильтры.</div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <p class="fw-bold mb-1">TechPoint</p>
+          <p class="mb-0 text-white-50">Смартфоны Samsung с проверкой и гарантией</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">8 (800) 555-35-35</p>
+          <p class="mb-0">abobaverygood@techpoint.example</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="mb-0 text-white-50">&copy; 2026 TechPoint. Учебный проект, цены для примера</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

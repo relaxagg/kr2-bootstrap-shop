@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Магазин смартфонов Samsung Galaxy S23 с проверкой и гарантией.">
+  <title>TechPoint — смартфоны Samsung</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tech<span class="text-brand">Point</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 flex-grow-1">
+    <div class="alert alert-success d-none" id="successAlert" role="alert">
+      Заявка отправлена! Мы перезвоним вам в течение часа.
+    </div>
+
+    <section class="hero rounded-4 p-4 p-lg-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Смартфоны Samsung с проверкой</h1>
+          <p class="lead">Продаём Galaxy S23, S23+ и S23 Ultra. Каждый телефон проверяем перед продажей и даём гарантию 30 дней.</p>
+          <a class="btn btn-orange btn-lg me-2" href="catalog.html">Перейти в каталог</a>
+          <a class="btn btn-outline-light btn-lg" href="#popular">Популярное</a>
+        </div>
+        <div class="col-lg-5">
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner bg-white rounded-4 py-3">
+            <div class="carousel-item active">
+              <img src="images/samsung-s23.jpg" class="d-block mx-auto hero-img" alt="Samsung Galaxy S23">
+            </div>
+            <div class="carousel-item">
+              <img src="images/samsung-s23-plus.jpg" class="d-block mx-auto hero-img" alt="Samsung Galaxy S23+">
+            </div>
+            <div class="carousel-item">
+              <img src="images/samsung-s23-ultra.jpg" class="d-block mx-auto hero-img" alt="Samsung Galaxy S23 Ultra">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Вперёд</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="advantages">
+      <h2 class="mb-4">Почему TechPoint</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 bg-light">
+            <div class="card-body">
+              <h3 class="h5">Проверка</h3>
+              <p class="card-text mb-0">Смотрим экран, камеры, батарею и связь.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 bg-light">
+            <div class="card-body">
+              <h3 class="h5">Гарантия 30 дней</h3>
+              <p class="card-text mb-0">Если что-то сломается, поменяем или вернём деньги.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 bg-light">
+            <div class="card-body">
+              <h3 class="h5">Доставка</h3>
+              <p class="card-text mb-0">Курьером по городу или самовывоз.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="popular">
+      <h2 class="mb-4">Популярные товары</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/samsung-s23.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-success">В наличии</span></div>
+              <h3 class="card-title h5">Samsung Galaxy S23</h3>
+              <p class="card-text text-secondary">8/256 ГБ, экран 6,1 дюйма</p>
+              <p class="fw-bold fs-5 mb-3">49 990 ₽</p>
+              <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-outline-dark" href="product-s23.html">Подробнее</a>
+              <button class="btn btn-orange" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="Samsung Galaxy S23">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/samsung-s23-plus.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23+">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-success">В наличии</span></div>
+              <h3 class="card-title h5">Samsung Galaxy S23+</h3>
+              <p class="card-text text-secondary">8/256 ГБ, экран 6,6 дюйма</p>
+              <p class="fw-bold fs-5 mb-3">57 990 ₽</p>
+              <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-outline-dark" href="product-s23-plus.html">Подробнее</a>
+              <button class="btn btn-orange" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="Samsung Galaxy S23+">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/samsung-s23-ultra.jpg" class="card-img-top product-img p-3" alt="Samsung Galaxy S23 Ultra">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-danger">Скидка 13%</span></div>
+              <h3 class="card-title h5">Samsung Galaxy S23 Ultra</h3>
+              <p class="card-text text-secondary">12/256 ГБ, экран 6,8 дюйма, стилус</p>
+              <p class="fw-bold fs-5 mb-3 text-danger">64 990 ₽ <s class="text-secondary fs-6 fw-normal">74 990 ₽</s></p>
+              <div class="mt-auto d-flex gap-2">
+              <a class="btn btn-outline-dark" href="product.html">Подробнее</a>
+              <button class="btn btn-orange" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="Samsung Galaxy S23 Ultra">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-4">Частые вопросы</h2>
+      <div class="accordion" id="faq">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              Телефоны новые или б/у?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+            <div class="accordion-body">Есть и новые, и б/у в отличном состоянии. Состояние всегда пишем в описании.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              Можно посмотреть телефон перед покупкой?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Да, оставьте заявку и договоримся о встрече.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              Как оплатить?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Наличными или переводом при получении.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <p class="fw-bold mb-1">TechPoint</p>
+          <p class="mb-0 text-white-50">Смартфоны Samsung с проверкой и гарантией</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-1">8 (800) 555-35-35</p>
+          <p class="mb-0">abobaverygood@techpoint.example</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="mb-0 text-white-50">&copy; 2026 TechPoint. Учебный проект, цены для примера</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <form class="order-form" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="orderModalTitle">Заявка</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="modal-name">Имя</label>
+                <input class="form-control" id="modal-name" name="name" type="text" required>
+                <div class="invalid-feedback">Введите имя</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="modal-email">E-mail</label>
+                <input class="form-control" id="modal-email" name="email" type="email" required>
+                <div class="invalid-feedback">Введите корректный e-mail</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="modal-phone">Телефон</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">+7</span>
+                  <input class="form-control" id="modal-phone" name="phone" type="tel" placeholder="900 000-00-00" required>
+                  <div class="invalid-feedback">Введите телефон</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="modal-model">Модель</label>
+                <select class="form-select" id="modal-model" name="model" required>
+                  <option value="">Выберите модель</option>
+                  <option value="Samsung Galaxy S23">Samsung Galaxy S23</option>
+                  <option value="Samsung Galaxy S23+">Samsung Galaxy S23+</option>
+                  <option value="Samsung Galaxy S23 Ultra">Samsung Galaxy S23 Ultra</option>
+                </select>
+                <div class="invalid-feedback">Выберите модель</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="modal-comment">Комментарий</label>
+                <textarea class="form-control" id="modal-comment" name="comment" rows="3"></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" id="modal-agree" name="agree" type="checkbox" required>
+                  <label class="form-check-label" for="modal-agree">Согласен на обработку данных</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-orange">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
